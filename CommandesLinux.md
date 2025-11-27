@@ -24,3 +24,11 @@ rm -R ~/dossier_Test
 ```bash
 cp -R ~/Téléchargements ~/Téléchargements2
 ```
+- Déplacer un fichier ou un dossier
+```bash
+mv -R ~/Téléchargements2 ~/Documents/
+```
+- Trouver un fichier
+```bash
+find -name toto.txt
+```
