@@ -4,4 +4,11 @@
 ```bash
 ls -l
 ```
-- 
+- Changer de dossier
+```bash
+cd /home/stagiaire
+```
+- Indiquer le dossier courant
+```bash
+pwd
+```
