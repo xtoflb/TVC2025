@@ -12,3 +12,15 @@ cd /home/stagiaire
 ```bash
 pwd
 ```
+- Créer un dossier
+```bash
+mkdir ~/dossier_Test
+```
+- Supprimer un fichier ou un dossier
+```bash
+rm -R ~/dossier_Test
+```
+- Copier un fichier ou un dossier
+```bash
+cp -R ~/Téléchargements ~/Téléchargements2
+```
