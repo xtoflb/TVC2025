@@ -19,7 +19,7 @@ apt install google-chrome-stable
 ```
 ## Installer le logiciel Discord manuellement à partir d'un fichier .deb
 ```
-wget discord.deb "https://discord.com/api/download?platform=linux&format=deb"
+cd /tmp && wget discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 mv *=deb discord.deb
 dpkg -i discord.deb
 apt --fix-broken install
