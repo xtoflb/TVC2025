@@ -39,6 +39,6 @@ timedatectl set-ntp true
 systemctl restart systemd-timesyncd
 ```
 - Vérifier la synchronisation
-  ```
+```
 timedatectl timesync-status
 ```
