@@ -22,6 +22,7 @@ apt install google-chrome-stable
 wget discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 mv *=deb discord.deb
 dpkg -i discord.deb
+apt --fix-broken install
 ```
 ## Configuration de l'horloge
 - Synchronisation sur un serveur spécifique NTP : fichier /etc/systemd/timesyncd.conf
