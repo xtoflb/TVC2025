@@ -22,3 +22,12 @@ apt install google-chrome-stable
 wget discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 dpkg -i discord.deb
 ```
+## Configuration de l'horloge
+- Synchronisation sur un serveur spécifique NTP
+```conf
+[Time]
+NTP=ntp.univ-rennes2.fr
+FallbackNTP=0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.
+pool.ntp.org
+```
+- 
