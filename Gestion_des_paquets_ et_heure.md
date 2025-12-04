@@ -23,11 +23,22 @@ wget discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 dpkg -i discord.deb
 ```
 ## Configuration de l'horloge
-- Synchronisation sur un serveur spécifique NTP
+- Synchronisation sur un serveur spécifique NTP : fichier /etc/systemd/timesyncd.conf
 ```conf
 [Time]
 NTP=ntp.univ-rennes2.fr
 FallbackNTP=0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.
 pool.ntp.org
 ```
-- 
+- Activer NTP
+```
+timedatectl set-ntp true
+```
+- Redémarrer le service
+```
+systemctl restart systemd-timesyncd
+```
+- Vérifier la synchronisation
+  ```
+timedatectl timesync-status
+```
